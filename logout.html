@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Logged Out</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #000000, #3333ff);
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .logout-container {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 2em;
+      color: #00ffcc;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+
+    .login-link {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #00cc99;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .login-link:hover {
+      background-color: #008866;
+    }
+  </style>
+</head>
+<body>
+  <div class="logout-container">
+    <h1>👋 You’ve been logged out</h1>
+    <p>Thank you for using the YSC Member System.</p>
+    <a href="login.html" class="login-link">🔐 Log in Again</a>
+  </div>
+</body>
+</html>

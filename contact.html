@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - YSC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="background">
+  <div class="container">
+    <h1>📞 Contact Us</h1>
+
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send via WhatsApp</button>
+    </form>
+
+    <div class="contact-info">
+      <h2>📱 Phone Contacts</h2>
+      <ul>
+        <li><strong>Chaplin FR Ambrose Gurti:</strong> 0768 128 702</li>
+        <li><strong>Moderator Victor Nagwea:</strong> 0796 829 590</li>
+        <li><strong>Vice Moderator Benedict Muia:</strong> 0759 262 149</li>
+      </ul>
+
+      <h2>🌐 Follow Us</h2>
+      <p>
+        🎵 Check out our TikTok page:  
+        <a href="https://vm.tiktok.com/ZMSTpqFJT/" target="_blank">
+            TikTok YSC
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      const phone = "254706876154"; // Replace with your WhatsApp number
+      const text = `Hello YSC, my name is ${name}. My email is ${email}. Message: ${message}`;
+      const encodedText = encodeURIComponent(text);
+
+      const whatsappURL = `https://wa.me/${phone}?text=${encodedText}`;
+
+      window.open(whatsappURL, "_blank");
+    });
+  </script>
+</body>
+</html>
+
+
+<style>
+.background {
+  background: url("church1 - Copy.JPG") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+.container {
+  background-color: rgba(54, 54, 54, 0.85);
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #218838;
+}
+.contact-info a {
+  color: #eb0707;
+  text-decoration: underline;
+}
+.contact-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+.contact-info li {
+  margin: 10px 0;
+}
+</style>

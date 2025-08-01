@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YSC Member Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('YSC.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+    .dashboard {
+      background-color: rgba(0, 0, 0, 0.7);
+      max-width: 600px;
+      margin: 80px auto;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #00ffcc;
+    }
+    .info {
+      margin-top: 20px;
+      text-align: left;
+    }
+    .logout-btn {
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: crimson;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+    }
+    .logout-btn:hover {
+      background-color: darkred;
+    }
+
+    p.info {
+      margin: 10px 0;
+      font-size: 0.9em;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <h1>🎉 Welcome to YSC group</h1>
+    <p class="info">You are now logged in as a registered Youth member.</p>
+
+    <!-- Placeholder: Display user data here after connecting to Firebase -->
+    <div class="info">
+      <p><strong>Name:</strong> (User Full Name   Victor Nagwea)</p>
+      <p><strong>Outstation:</strong> (Outstation Name   SACRED HEART NGANDO)</p>
+      <p><strong>Status:</strong> Active</p>
+    </div>
+
+    <button class="logout-btn" onclick="logout()">🚪 Logout</button>
+  </div>
+
+  <script>
+    function logout() {
+      // For now, just go back to login page
+      alert("You have been logged out.");
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - YSC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Register Member</h1>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="date" placeholder="Date of Birth" required />
+      <input type="text" placeholder="Phone Number" required />
+      <input type="number" placeholder="Age" required />
+
+      <select required>
+        <option value="">Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+
+      <select required>
+        <option value="">Select Outstation</option>
+        <option>SACRED HEART NGANDO</option>
+        <option>SAINT VINCENT PALLOTTI</option>
+        <option>BLE ELIZABETA SAANA</option>
+        <option>SAINT FRANCIS OF ASSISSI</option>
+      </select>
+
+      <!-- New Section: Username & Password -->
+      <input type="text" placeholder="Create Username" required />
+      <input type="password" placeholder="Create Password" required />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <p style="margin-top: 20px;">Already registered?</p>
+    <button onclick="location.href='login.html'">🔑 Login Here</button>
+  </div>
+</body>
+
+  </div>
+<style>
+
+.background {
+  background: url("YSC.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+.container {
+  background-color: rgba(143, 55, 55, 0.7);
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+}
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #218838;
+}
+
+</style>
+</html>

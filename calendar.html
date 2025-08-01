@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calendar - YSC</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+  <div class="container" id="calendarSection">
+    <h1>🗓️ Youth Events Calendar</h1>
+    <ul>
+      <li><strong>Aug 3:</strong> Youth Prayer Day</li>
+      <li><strong>Aug 10:</strong> Music Practice</li>
+      <li><strong>Aug 17:</strong> Outreach Event</li>
+      <li><strong>Aug 24:</strong> Talent Showcase</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <button onclick="downloadPDF()">📄 Download Calendar PDF</button>
+    <button onclick="location.href='index.html'">⬅ Back to Home</button>
+  </div>
+
+  <script>
+    function downloadPDF() {
+      const element = document.getElementById("calendarSection");
+      html2pdf().from(element).save("Youth_Calendar.pdf");
+    }
+  </script>
+</body>
+</html>
