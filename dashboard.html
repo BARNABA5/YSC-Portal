@@ -19,15 +19,18 @@ body {
 }
 
 
-
-    .dashboard {
-      background-color: rgba(0, 0, 0, 0.7);
-      max-width: 600px;
-      margin: 80px auto;
-      padding: 30px;
-      border-radius: 20px;
-      text-align: center;
-    }
+.dashboard {
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent black */
+  backdrop-filter: blur(10px);   /* glass blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* soft border */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* optional depth */
+}
     h1 {
       color: #00ffcc;
     }
@@ -78,3 +81,4 @@ body {
 
 </body>
 </html>
+
